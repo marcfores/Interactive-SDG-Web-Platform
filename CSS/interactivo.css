@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
+header {
+    background-color: #0044cc;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem; 
+    font-weight: bold;
+}
+
+.barra-navegacion ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.barra-navegacion a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.barra-navegacion a:hover {
+    text-decoration: underline;
+}
+
+.principal {
+    text-align: center;
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.juegos {
+    padding: 30px;
+    background-color: #e0f7fa;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.actividad {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #0044cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0033aa;
+}
+
+.respuesta {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.arrastrar-soltar {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+#ods4, #ods13, #ods3, #ods1, #ods5 {
+    padding: 10px;
+    background-color: #ffc107;
+    border: 2px dashed #0044cc;
+    cursor: grab;
+    width: 150px;
+    text-align: center;
+}
+
+#descripcion1, #descripcion2, #descripcion3, #descripcion4, #descripcion5 {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 2px solid #0044cc;
+    width: 300px;
+    text-align: center;
+    min-height: 50px;
+}
+
+#juego-verdadero-falso {
+    margin-bottom: 50px; 
+}
+
+#juego-verdadero-falso, #juego-arrastra-suelta {
+    border: 3px solid #0044cc; 
+    padding: 20px; 
+    margin: 20px; 
+    border-radius: 10px; 
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0044cc;
+    color: white;
+}

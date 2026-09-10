@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+.encabezado {
+    text-align: center;
+    color: white;
+    padding: 50px 0;
+    background: url('../Imágenes/imagen2_secundaria.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+.encabezado h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.menu-navegacion {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.menu-navegacion a {
+    text-decoration: none;
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.menu-navegacion a:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.seccion-estadisticas {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1000px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.titulo-estadisticas {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contenedor-graficos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+canvas {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #0044cc;
+    color: white;
+}

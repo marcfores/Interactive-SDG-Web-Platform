@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividades - PCM-TelecoODS</title>
+    <link rel="stylesheet" href="../CSS/interactivo.css">
+</head>
+<body>
+    <header>
+        <nav class="barra-navegacion">
+            <div class="logo"><h1>Actividades sobre los ODS</h1></div>
+            <ul class="enlaces">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../HTML/ods.html">ODS</a></li>
+                <li><a href="../HTML/interactivo.html">Interactivo</a></li>
+                <li><a href="../HTML/galeria.html">Galería</a></li>
+                <li><a href="../HTML/estadisticas.html">Estadísticas</a></li>
+                <li><a href="../HTML/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="principal">
+            <h1>¡Aprende sobre los ODS jugando!</h1>
+            <p>Participa en actividades interactivas para aprender más sobre los Objetivos de Desarrollo Sostenible.</p>
+        </section>
+
+        <section id="juego-verdadero-falso" class="juegos">
+            <h2>Verdadero o Falso</h2>
+
+            <div class="actividad">
+                <p>"El ODS 4 busca garantizar una educación inclusiva, equitativa y de calidad para todos."</p>
+                <button onclick="verificarRespuesta(true, 1)">Verdadero</button> 
+                <button onclick="verificarRespuesta(false, 1)">Falso</button>
+                <p id="respuesta1" class="respuesta"></p>
+            </div>
+            <div class="actividad">
+                <p>"El ODS 13 está relacionado con la igualdad de género."</p>
+                <button onclick="verificarRespuesta(false, 2)">Verdadero</button>
+                <button onclick="verificarRespuesta(true, 2)">Falso</button>
+                <p id="respuesta2" class="respuesta"></p>
+            </div>
+            <div class="actividad">
+                <p>"El ODS 3 promueve la salud y el bienestar."</p>
+                <button onclick="verificarRespuesta(true, 3)">Verdadero</button>
+                <button onclick="verificarRespuesta(false, 3)">Falso</button>
+                <p id="respuesta3" class="respuesta"></p>
+            </div>
+            <div class="actividad">
+                <p>"El ODS 7 busca garantizar el acceso a agua limpia y saneamiento."</p>
+                <button onclick="verificarRespuesta(false, 4)">Verdadero</button>
+                <button onclick="verificarRespuesta(true, 4)">Falso</button>
+                <p id="respuesta4" class="respuesta"></p>
+            </div>
+            <div class="actividad">
+                <p>"El ODS 1 tiene como objetivo erradicar la pobreza."</p>
+                <button onclick="verificarRespuesta(true, 5)">Verdadero</button>
+                <button onclick="verificarRespuesta(false, 5)">Falso</button>
+                <p id="respuesta5" class="respuesta"></p>
+            </div>
+        </section>
+
+        <section id="juego-arrastra-suelta" class="juegos">
+            <h2>Arrastra y Suelta</h2>
+            <p>Arrastra el objetivo correcto hacia la descripción:</p>
+
+            
+            <div class="arrastrar-soltar">
+                <div id="ods4" draggable="true" ondragstart="arrastrar(event)">ODS 4: Educación de calidad</div> 
+                <div id="ods13" draggable="true" ondragstart="arrastrar(event)">ODS 13: Acción por el clima</div> 
+                <div id="ods3" draggable="true" ondragstart="arrastrar(event)">ODS 3: Salud y bienestar</div>
+                <div id="ods1" draggable="true" ondragstart="arrastrar(event)">ODS 1: Fin de la pobreza</div>
+                <div id="ods5" draggable="true" ondragstart="arrastrar(event)">ODS 5: Igualdad de género</div>
+                <div id="descripcion1" ondrop="soltar(event)" ondragover="permitirSoltar(event)">
+                    <p>"Garantizar una educación inclusiva, equitativa y de calidad."</p>
+                </div>
+                <div id="descripcion2" ondrop="soltar(event)" ondragover="permitirSoltar(event)">  
+                    <p>"Tomar medidas urgentes para combatir el cambio climático y sus impactos."</p>
+                </div>
+                <div id="descripcion3" ondrop="soltar(event)" ondragover="permitirSoltar(event)">
+                    <p>"Garantizar una vida sana y promover el bienestar para todos."</p>
+                </div>
+                <div id="descripcion4" ondrop="soltar(event)" ondragover="permitirSoltar(event)">
+                    <p>"Erradicar la pobreza en todas sus formas en todo el mundo."</p>
+                </div>
+                <div id="descripcion5" ondrop="soltar(event)" ondragover="permitirSoltar(event)">
+                    <p>"Lograr la igualdad de género y empoderar a todas las mujeres y niñas."</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 PCM-TelecoODS</p>
+    </footer>
+
+    <script src="../JavaScript/interactivo.js"></script>
+
+</body>
+</html>
